@@ -99,14 +99,13 @@ pytest tests/ -v
 ```
 smartload/
 ├── app/
-│   ├── main.py          # FastAPI app + exception handlers
-│   ├── router.py        # POST /optimize endpoint
-│   ├── optimizer.py     # Bitmask DP core algorithm
-│   ├── models.py        # Pydantic request/response models
-│   └── exceptions.py    # Custom exception classes
-├── tests/
-│   └── test_optimizer.py
-├── Dockerfile           # Multi-stage, non-root user
+│   ├── main.py          # FastAPI app
+│   ├── router.py      
+│   ├── optimizer.py     # Bitmask DP
+│   ├── models.py        
+│   └── exceptions.py   
+|── test_optimizer.py
+├── Dockerfile          
 ├── docker-compose.yml
 ├── requirements.txt
 ├── sample-request.json
